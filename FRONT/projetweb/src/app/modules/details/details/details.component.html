@@ -1,0 +1,5 @@
+<div *ngFor="let item of produit | async" class="container">
+    <p>nom : {{ item.nom }}</p>
+    <p>prix : {{ item.prix}} € </p>
+    <button type="button" class="btn btn-primary" (click)='addpanier(item)'>Ajouter au panier</button>
+</div>

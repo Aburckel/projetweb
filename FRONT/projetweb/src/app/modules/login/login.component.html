@@ -1,0 +1,17 @@
+<mat-grid-list cols="4">
+  <mat-grid-tile colspan="4">
+    <form id="#formclient" [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)" style="width: 20%;">
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput type="text" formControlName="Email" id="email" style="width: 100%;" required>
+      </mat-form-field>
+      <br>
+      <mat-form-field>
+        <mat-label>Mot de passe</mat-label>
+        <input matInput type="password" formControlName="Mdp" id="mdp" style="width: 100%;" required>
+      </mat-form-field>
+      <br>
+      <button mat-flat-button color="primary" type="submit">Valider</button>
+    </form>
+  </mat-grid-tile>
+</mat-grid-list>

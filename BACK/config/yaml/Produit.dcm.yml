@@ -1,0 +1,25 @@
+Produit:
+    type: entity
+    table: produit
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        nom:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+        prix:
+            type: decimal
+            nullable: false
+            precision: 65
+            scale: 0
+    lifecycleCallbacks: {  }

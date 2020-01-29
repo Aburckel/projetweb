@@ -1,0 +1,49 @@
+  <p>Alors ça c'est un formulaire très moche pour que tu puisses t'inscrire sur ce site</p>
+  <form id="#formclient" [formGroup]="signupForm" (ngSubmit)="onSubmit(signupForm.value)">
+    <mat-form-field>
+      <mat-label>Nom</mat-label>
+      <input matInput type="text" formControlName="Nom" id="nom" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Prenom</mat-label>
+      <input matInput type="text" formControlName="Prenom" id="prenom" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Telephone</mat-label>
+      <input matInput type="text" formControlName="Telephone" id="telephone" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Adresse</mat-label>
+      <input matInput type="text" formControlName="Adresse" id="adresse" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Ville</mat-label>
+      <input matInput type="text" formControlName="Ville" id="ville" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Code Postal</mat-label>
+      <input matInput type="text" formControlName="CP" id="codepostal" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Pays</mat-label>
+      <input matInput type="text" formControlName="Pays" id="pays" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput type="text" formControlName="Email" id="email" style="width:50%;" required>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>Mot de passe</mat-label>
+      <input matInput type="password" formControlName="Mdp" id="mdp" style="width:50%;" required>
+    </mat-form-field>
+    
+    <button mat-flat-button color="primary" type="submit">Valider</button>
+  </form>

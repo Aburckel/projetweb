@@ -1,0 +1,7 @@
+<div class="nav-bar">
+    <a mat-icon-button color="primary" [routerLink]="['/']" routerLinkActive="active"><mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon></a>
+    <a mat-button color="primary" [routerLink]="['compteclient']" routerLinkActive="active">Compte Client</a>
+    <a mat-button color="primary" [routerLink]="['catalogue']" routerLinkActive="active">Catalogue</a>
+    <a mat-button color="primary" [routerLink]="['panier']" matBadge="{{ qty }}" matBadgeSize="small" matBadgePosition="after" matBadgeColor="primary" routerLinkActive="active">Panier</a>
+    <a mat-button color="primary" [routerLink]="['login']" routerLinkActive="active">Login</a>
+</div>

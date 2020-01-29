@@ -1,0 +1,4 @@
+<mat-list *ngFor=" let item of panier | async">
+  <mat-list-item>{{item.nom}} - {{item.prix}}€</mat-list-item>
+  <mat-divider></mat-divider>
+</mat-list>
